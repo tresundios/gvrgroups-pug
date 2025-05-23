@@ -1,0 +1,21 @@
+mixin navMixin(currentPage)
+    header#header.header.d-flex.align-items-center.fixed-top
+        .container-fluid.container-xl.position-relative.d-flex.align-items-center.justify-content-between
+            a.logo.d-flex.align-items-center.me-auto.me-lg-0(href='index.html')
+                img(src='assets/legily/logo.png' alt='')
+            nav#navmenu.navmenu
+                ul
+                    li.nav-item
+                        a.nav-link(href='index.html', class=(currentPage === 'index' ? 'active' : '')) Home
+                    li.nav-item
+                        a.nav-link(href='products.html', class=(currentPage === 'products' ? 'active' : '')) Shop for Products
+                    li.nav-item
+                        a.nav-link(href='aboutus.html', class=(currentPage === 'aboutus' ? 'active' : '')) About us
+                    li.nav-item
+                        a.nav-link(href='aboutus.html', class=(currentPage === 'aboutus' ? 'active' : '')) Affiliate
+                i.mobile-nav-toggle.d-xl-none.bi.bi-list
+            .cart-icons.d-flex
+                a.d-flex.align-items-center.me-3(href='#')
+                    i.bi.bi-person.icon-circle
+                a.d-flex.align-items-center(href='#')
+                    i.bi.bi-cart.icon-circle
