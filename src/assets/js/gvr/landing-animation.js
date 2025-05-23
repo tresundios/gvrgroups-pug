@@ -45,8 +45,9 @@
   
 document.addEventListener('DOMContentLoaded', function () {
   const videos = [
-    'assets/videos/smart_house_tablet_1280x720.mp4',
-    'assets/videos/people_tablet_1280x672.mp4'
+    'assets/videos/gvrclip.mp4',
+    'assets/videos/people_tablet_1280x672.mp4',
+    'assets/videos/smart_house_tablet_1280x720.mp4'
   ];
 
   let currentVideo = 0;

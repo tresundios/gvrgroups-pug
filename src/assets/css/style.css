@@ -46,7 +46,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 :root {
-  --color-primary: #3a37eb;
+  --color-primary: #242bea;
   --color-secondary:#111D5E;
   --color-terciary:#90FF03;
   --color-body: #6F737B;
@@ -16214,6 +16214,22 @@ a.rts-read-more:hover i {
   transition: opacity 1s ease-in-out;
 }
 
+
+
+.neon-text {
+    font-size: 4rem;
+    text-shadow: 0 0 5px #4f86c0;
+
+}
+
+.neon-text-grey {
+    font-size: 4rem;
+    text-shadow: 0 0 5px #4f86c0;
+
+}
+
+
+
 .fade-out {
   opacity: 0;
 }
@@ -16253,12 +16269,13 @@ a.rts-read-more:hover i {
 .banner-five-content {
   display: flex;
   margin-top: 37%;
+
 }
 .banner-five-content .inner {
   max-width: 900px;
 }
 .banner-five-content .inner .title {
-  color: #fff;
+  color: #07b9e5;
   font-weight: 700;
   font-size: 80px;
   line-height: 90px;
@@ -16289,9 +16306,9 @@ a.rts-read-more:hover i {
   }
 }
 .banner-five-content .inner p.disc {
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 400;
-  font-size: 18px;
+  color: #07b9e5;
+  font-weight: 300;
+  font-size: 20px;
   line-height: 28px;
 }
 
@@ -23930,6 +23947,7 @@ html.rts-dark header a .stickys {
 }
 html.rts-dark header.sticky a .normal {
   display: block;
+  
 }
 html.rts-dark header.sticky a .stickys {
   display: none;
