@@ -22,70 +22,14 @@ html(lang="en")
   body.index-two
     include includes/header.pug
     //- Mobile Menu (simplified for brevity)
-    #side-bar.side-bar
-      button.close-icon-menu
-        i.far.fa-times
-      .rts-sidebar-menu-desktop
-        a.logo-1(href="index.html")
-          img.logo(src="assets/images/logo/gvr-trans-logo.png" alt="GVR Logo")
-        a.logo-2(href="index.html")
-          img.logo(src="assets/images/logo/gvr-trans-logo.png" alt="GVR Logo")
-        .body.d-none.d-xl-block
-          p.disc.text-center(style="font-weight: 900; font-size: small; padding-bottom: 0px;")
-            | Think Smart Automation Solutions
-            br
-            | Think GVR Groups
-        .get-in-touch
-          .wrapper
-            .single
-              i.fas.fa-envelope
-              a(href="#")
-                b Chennai
-              div(style="font-size: smaller;")
-                | +91-9840379299
-                br
-                | #15/7A, Devagiammal Street, Shenoy Nagar, Aminijikarai -600030
-                br
-                | #60, Rajiv Gandhi Salai, OMR, Karapakkam, Chennai - 600097
-            .single
-              i.fas.fa-envelope
-              a(href="#")
-                b Coimbatore
-              div(style="font-size: smaller;")
-                | +91-8754440984
-                br
-                | #16/33, Chinnammal street, Saibaba Colony, K.K.Pudur - 641038
-            .single
-              i.fas.fa-envelope
-              a(href="#") eht@gvrgroups.com
+
+    include includes/GVRAddress.pug
 
     #anywhere-home
 
     //- Banner/Slider
-    .rts-banner-five-area
-      .rts-banner-five.bg-video-container
-        video.bg-video#bg-video(autoplay muted loop playsinline)
-          source#video-source(type="video/mp4")
-          | Your browser does not support the video tag.
-        .container
-          .row
-            .col-xl-7
-              .banner-five-content
-                .inner
-                  h1.title.fade-text#banner-title
-                    span Smart Home
-                    br
-                    | Automation Solutions
-                  p.disc.fade-text#banner-desc
-                    | Transform your living space with our cutting-edge smart home automation services. From advanced CCTV and biometric access control to KNX automation and motorised curtains, we deliver seamless solutions powered by trusted brands like Hik-Vision, Yale, and Somfy.
-      .swiper-button-wrapper
-        .swiper-button-next(tabindex="0" role="button" aria-label="Next slide")
-          svg(xmlns="http://www.w3.org/2000/svg" width="31" height="53" viewBox="0 0 31 53" fill="none")
-            path(d="M0.734375 52.5156C0.5 52.2812 0.5 52.0469 0.5 51.8125C0.5 51.5781 0.5 51.3438 0.734375 51.2266L28.1562 26.5L0.734375 1.89062C0.382812 1.65625 0.382812 0.953125 0.734375 0.601562C1.08594 0.25 1.67188 0.25 2.02344 0.601562L30.1484 25.9141C30.5 26.2656 30.5 26.8516 30.1484 27.2031L2.02344 52.5156C1.67188 52.8672 1.08594 52.8672 0.734375 52.5156Z" fill="white")
-        .swiper-button-prev(tabindex="0" role="button" aria-label="Previous slide")
-          svg(xmlns="http://www.w3.org/2000/svg" width="31" height="53" viewBox="0 0 31 53" fill="none")
-            path(d="M30.2656 52.5156C30.5 52.2812 30.5 52.0469 30.5 51.8125C30.5 51.5781 30.5 51.3438 30.2656 51.2266L2.84375 26.5L30.2656 1.89062C30.6172 1.65625 30.6172 0.953125 30.2656 0.601562C29.9141 0.25 29.3281 0.25 28.9766 0.601562L0.851562 25.9141C0.5 26.2656 0.5 26.8516 0.851562 27.2031L28.9766 52.5156C29.3281 52.8672 29.9141 52.8672 30.2656 52.5156Z" fill="white")
-
+    include includes/banner.pug
+   
     //- About Us
     .rts-section-gap
       .container
